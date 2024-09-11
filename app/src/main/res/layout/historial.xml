@@ -20,7 +20,6 @@
             android:background="#000000"
             android:textColor="#FFFFFF"
             />
-s
 
         <Button
             android:id="@+id/btnRegresar"
