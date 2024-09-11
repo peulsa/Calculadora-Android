@@ -16,9 +16,6 @@
         android:padding="24dp"
         android:background="#000000">
 
-        <!-- Título del Resultado -->
-
-        <!-- Campo de Entrada para Números -->
         <TextView
             android:id="@+id/tvResultado"
             android:layout_width="wrap_content"
@@ -30,7 +27,6 @@
             android:textColor="#FFFFFF"
             android:textSize="28sp" />
 
-        <!-- Contenedor Horizontal para los botones de Operaciones y "C" e "=" -->
 
         <EditText
             android:id="@+id/etNumero"
@@ -52,7 +48,6 @@
             android:gravity="center"
             android:layout_marginBottom="16dp">
 
-            <!-- Contenedor Vertical para los botones "C" e "=" alineados a la izquierda -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -60,7 +55,6 @@
                 android:orientation="vertical"
                 android:gravity="left">
 
-                <!-- Botón de Limpiar (C) -->
                 <Button
                     android:id="@+id/btnC"
                     android:layout_width="156dp"
@@ -71,7 +65,6 @@
                     android:textColor="#000000"
                     android:textSize="20sp" />
 
-                <!-- Botón de Igual (=) -->
                 <Button
                     android:id="@+id/btnIgual"
                     android:layout_width="158dp"
@@ -84,7 +77,6 @@
 
             </LinearLayout>
 
-            <!-- Contenedor Vertical para los símbolos de operación alineados a la derecha -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -92,7 +84,6 @@
                 android:gravity="right"
                 android:orientation="vertical">
 
-                <!-- Botón de Sumar -->
                 <Button
                     android:id="@+id/btnSumar"
                     android:layout_width="120dp"
@@ -103,7 +94,6 @@
                     android:textColor="#000000"
                     android:textSize="24sp" />
 
-                <!-- Botón de Restar -->
                 <Button
                     android:id="@+id/btnRestar"
                     android:layout_width="122dp"
@@ -114,7 +104,6 @@
                     android:textColor="#000000"
                     android:textSize="24sp" />
 
-                <!-- Botón de Multiplicar -->
                 <Button
                     android:id="@+id/btnMultiplicar"
                     android:layout_width="122dp"
@@ -125,7 +114,6 @@
                     android:textColor="#000000"
                     android:textSize="24sp" />
 
-                <!-- Botón de Dividir -->
                 <Button
                     android:id="@+id/btnDividir"
                     android:layout_width="121dp"
@@ -140,7 +128,6 @@
 
         </LinearLayout>
 
-        <!-- Botón de Historial -->
         <Button
             android:id="@+id/btnHistorial"
             android:layout_width="match_parent"
