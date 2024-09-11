@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d5dbdb"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#000000">
+
+        <!-- Título del Resultado -->
+
+        <!-- Campo de Entrada para Números -->
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text=" Resultado "
+            android:textColor="#FFFFFF"
+            android:textSize="28sp" />
+
+        <!-- Contenedor Horizontal para los botones de Operaciones y "C" e "=" -->
+
+        <EditText
+            android:id="@+id/etNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="24dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:hint="INGRESE UN NUMERO"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <!-- Contenedor Vertical para los botones "C" e "=" alineados a la izquierda -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="left">
+
+                <!-- Botón de Limpiar (C) -->
+                <Button
+                    android:id="@+id/btnC"
+                    android:layout_width="156dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="#95A5A6"
+                    android:text="C"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <!-- Botón de Igual (=) -->
+                <Button
+                    android:id="@+id/btnIgual"
+                    android:layout_width="158dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="#27AE60"
+                    android:text="="
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <!-- Contenedor Vertical para los símbolos de operación alineados a la derecha -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <!-- Botón de Sumar -->
+                <Button
+                    android:id="@+id/btnSumar"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="#2ECC71"
+                    android:text="+"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <!-- Botón de Restar -->
+                <Button
+                    android:id="@+id/btnRestar"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="#E74C3C"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <!-- Botón de Multiplicar -->
+                <Button
+                    android:id="@+id/btnMultiplicar"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="#3498DB"
+                    android:text="x"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <!-- Botón de Dividir -->
+                <Button
+                    android:id="@+id/btnDividir"
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:backgroundTint="#F1C40F"
+                    android:text="/"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Botón de Historial -->
+        <Button
+            android:id="@+id/btnHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#8E44AD"
+            android:text="Historial"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
